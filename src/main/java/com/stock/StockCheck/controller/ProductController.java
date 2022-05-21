@@ -28,4 +28,9 @@ public class ProductController {
     public List<StockCheckAudit> getProductsHistory() {
         return productService.getHistory();
     }
+
+    @GetMapping("/Lucky")
+    public String something() {
+        return "Lucky is Great";
+    }
 }
